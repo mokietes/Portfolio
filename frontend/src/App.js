@@ -1,6 +1,6 @@
 import React from "react";
 
-import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
+import { About, Header } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
 
@@ -10,10 +10,10 @@ function App() {
       <Navbar />
       <Header />
       <About />
-      <Work />
+      {/* <Work />
       <Skills />
       <Testimonial />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
