@@ -1,17 +1,22 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { NavigationDots, SocialMedia } from "../components";
 
-const MotionWrap = (Component, classNames) =>
+const AppWrap = (Component, idName, classNames) =>
   function HOC() {
     return (
-      <motion.div
-        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
-        className={`${classNames} app__flex`}
-      >
-        <Component />
-      </motion.div>
+      <div id={idName} className={`app__container ${classNames}`}>
+        <SocialMedia />
+        <div className="app__wrapper app__flex">
+          <Component />
+
+          <div className="copyright">
+            <p className="p-text">@2020 MICHAEL</p>
+            <p className="p-text">All rights reserved</p>
+          </div>
+        </div>
+        <NavigationDots active={idName} />
+      </div>
     );
   };
 
-export default MotionWrap;
+export default AppWrap;
