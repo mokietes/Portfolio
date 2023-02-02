@@ -1,8 +1,6 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable jsx-a11y/anchor-has-content */
-
 import React from "react";
 
+// eslint-disable-next-line react/prop-types
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
     {["home", "about", "work", "skills", "testimonial", "contact"].map(
