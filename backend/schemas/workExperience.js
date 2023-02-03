@@ -1,25 +1,18 @@
 export default {
-  name: 'skills',
-  title: 'Skills',
+  name: 'workExperience',
+  title: 'Work Experience',
   type: 'document',
   fields: [
+    {name: 'name', title: 'name', type: 'string'},
     {
-      name: 'name',
-      title: 'Name',
+      name: 'company',
+      title: 'Company',
       type: 'string',
     },
     {
-      name: 'bgColor',
-      title: 'BgColor',
+      name: 'desc',
+      title: 'Desc',
       type: 'string',
-    },
-    {
-      name: 'icon',
-      title: 'Icon',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
     },
   ],
 }
