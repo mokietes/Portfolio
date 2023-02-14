@@ -53,6 +53,6 @@
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.57.1"
+    "sass": "^1.58.1"
   }
 }
