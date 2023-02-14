@@ -24,7 +24,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment key={skills.name}>
       <h2 className="head-text">Skills & Experiences</h2>
 
       <div className="app__skills-container">
@@ -81,7 +81,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
